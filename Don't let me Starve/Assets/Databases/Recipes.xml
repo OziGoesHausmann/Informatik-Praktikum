@@ -1,0 +1,291 @@
+<Recipes>
+	<Recipe type="Stew" name="Eintopf" station="Pot">
+		<Alternative min="2" max="3">
+			<Ingredient type="Meat" name="Fleisch"/>
+			<Ingredient type="MeatlessMeat" name="Fleischersatz"/>
+			<Ingredient type="Vegetable" name="Gemüse"/>
+		</Alternative>
+		<Fixed min="1" max="1">
+			<Ingredient type="Water" name="Wasser"/>
+		</Fixed>
+		<Fixed min="0" max="1">
+			<Ingredient type="Herb" name="Kräuter"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="PanDish" name="Pfannengericht" station="Pan">
+		<Alternative min="2" max="3">
+			<Ingredient type="Meat" name="Fleisch"/>
+			<Ingredient type="MeatlessMeat" name="Fleischersatz"/>
+			<Ingredient type="Vegetable" name="Gemüse"/>
+		</Alternative>
+		<Fixed min="1" max="1">
+			<Ingredient type="Fat" name="Speisefett"/>
+		</Fixed>
+		<Fixed min="0" max="1">
+			<Ingredient type="Herb" name="Kräuter"/>
+		</Fixed>
+	</Recipe>
+	
+	<Recipe type="Pizza" name="Pizza" station="Oven">
+		<Alternative min="0" max="3">
+			<Ingredient type="Meat" name="Fleisch"/>
+			<Ingredient type="MeatlessMeat" name="Fleischersatz"/>
+			<Ingredient type="Vegetable" name="Gemüse"/>
+		</Alternative>
+		<Alternative min="1" max="1">
+			<Ingredient specific="Tomato" name="Tomate"/>
+			<Ingredient specific="Cream" name="Sahne"/>
+		</Alternative>
+		<Fixed min="1" max="1">
+			<Ingredient type="Flour" name="Mehl"/>
+			<Ingredient type="Water" name="Wasser"/>
+			<Ingredient type="Cheese" name="Käse"/>
+		</Fixed>
+		<Fixed min="0" max="1">
+			<Ingredient type="Herb" name="Kräuter"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Sandwich" name="Belegtes Brot" station="Worktop">
+		<Alternative min="1" max="1">
+			<Ingredient type="Cheese" name="Käse"/>
+			<Ingredient type="Dip" name="Aufstrich"/>
+			<Ingredient type="Sauce" name="Soße"/>
+			<Ingredient specific="BloodSausage" name="Blutwurst"/>
+			<Ingredient specific="Salami" name="Salami"/>
+			<Ingredient specific="Sucuk" name="Sucuk"/>
+		</Alternative>
+		<Fixed min="1" max="1">
+			<Ingredient type="Bread" name="Brot"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Cereals" name="Müsli" station="Worktop">
+		<Fixed min="1" max="1">
+			<Ingredient type="Dairy" name="Milchprodukt"/>
+		</Fixed>
+		<Fixed min="1" max="3">
+			<Ingredient type="CerealProduct" name="Getreideprodukt"/>
+		</Fixed>
+		<Fixed min="0" max="2">
+			<Ingredient type="Nut" name="Nüsse und Kerne"/>
+		</Fixed>
+		<Fixed min="0" max="1">
+			<Ingredient type="Sweetener" name="Süßungsmittel"/>
+			<Ingredient type="Fruit" name="Früchte"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="PastaRiceShice" name="Pasta / Reis mit Scheiß" station="Pot">
+		<Alternative min="1" max="2">
+			<Ingredient type="Meat" name="Fleisch"/>
+			<Ingredient type="MeatlessMeat" name="Fleischersatz"/>
+			<Ingredient type="Vegetable" name="Gemüse"/>
+		</Alternative>
+		<Alternative min="1" max="1">
+			<Ingredient specific="Tomato" name="Tomate"/>
+			<Ingredient type="Dairy" name="Milchprodukt"/>
+			<Ingredient type="Sauce" name="Soße"/>
+		</Alternative>
+		<Fixed min="1" max="1">
+			<Ingredient type="SideDish" name="Beilage"/>
+		</Fixed>
+		<Fixed min="0" max="1">
+			<Ingredient type="Herb" name="Kräuter"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Roast" name="Schnitzel mit Beilage" station="Pan">
+		<Alternative min="1" max="1">
+			<Ingredient type="Meat" name="Fleisch"/>
+			<Ingredient type="MeatlessMeat" name="Fleischersatz"/>
+		</Alternative>
+		<Fixed min="1" max="1">
+			<Ingredient type="SideDish" name="Beilage"/>
+		</Fixed>
+		<Fixed min="0" max="1">
+			<Ingredient type="Vegetable" name="Gemüse"/>
+			<Ingredient type="Herb" name="Kräuter"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Pastry" name="Gebäck" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient type="Flour" name="Mehl"/>
+			<Ingredient type="Water" name="Wasser"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Cake" name="Kuchen" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient type="Flour" name="Mehl"/>
+			<Ingredient type="Water" name="Wasser"/>
+			<Ingredient type="Fruit" name="Früchte"/>
+			<Ingredient type="Egg" name="Ei"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Kraftbrühe" station="Pot">
+		<Alternative min="1" max="1">
+			<Ingredient specific="Bone" name="Knochen"/>
+			<Ingredient specific="Gristle" name="Knorpel"/>
+		</Alternative>
+		<Fixed min="1" max="1">
+			<Ingredient specific="Carrot" name="Möhre"/>
+			<Ingredient type="Water" name="Wasser"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Kraftbrühe" station="Pot">
+		<Alternative min="1" max="1">
+			<Ingredient specific="Bone" name="Knochen"/>
+			<Ingredient specific="Gristle" name="Knorpel"/>
+		</Alternative>
+		<Fixed min="1" max="1">
+			<Ingredient specific="Carrot" name="Möhre"/>
+			<Ingredient type="Water" name="Wasser"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Nektarinen-Reiskuchen" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Rice" name="Reis"/>
+			<Ingredient type="Dairy" name="Milchprodukt"/>
+		</Fixed>
+		<Fixed min="2" max="2">
+			<Ingredient specific="Nectarine" name="Nektarine" status="Mushy"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Kartoffel-Zwiebel-Bratlinge" station="Pan">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Onion" name="Zwiebel"/>
+			<Ingredient type="Flour" name="Mehl"/>
+		</Fixed>
+		<Fixed min="2" max="2">
+			<Ingredient specific="Potato" name="Kartoffel" status="Mushy"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Falsche Prinzregententorte" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient type="Flour" name="Mehl"/>
+			<Ingredient type="Dairy" name="Milchprodukt"/>
+			<Ingredient type="Egg" name="Ei"/>
+		</Fixed>
+		<Fixed min="2" max="2">
+			<Ingredient specific="Mushroom" name="Pilz" status="Mushy"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Kirschmichel" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Cherries" name="Kirschen" status="Mushy"/>
+			<Ingredient type="Dairy" name="Milchprodukt"/>
+			<Ingredient type="Egg" name="Ei"/>
+			<Ingredient type="Bread" name="Brot" status="Mushy"/>
+		</Fixed>
+		<Fixed min="2" max="2">
+			<Ingredient specific="Mushroom" name="Pilz" status="Mushy"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Apfel-Reis-Auflauf" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Rice" name="Reis"/>
+			<Ingredient type="Dairy" name="Milchprodukt"/>
+			<Ingredient type="Egg" name="Ei"/>
+		</Fixed>
+		<Fixed min="2" max="2">
+			<Ingredient specific="Apple" name="Apfel" status="Mushy"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Orangenschalen-Candies" station="Worktop">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Orange Peel" name="Orangenschalen"/>
+			<Ingredient type="Water" name="Wasser"/>
+			<Ingredient specific="Sugar" name="Zucker"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Brokkoli-Tikki" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Broccoli Stem" name="Brokkoli-Stamm"/>
+			<Ingredient type="Cheese" name="Käse"/>
+			<Ingredient specific="Peanut" name="Erdnuss"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Karotten-Apfel-Aufstrich" station="Worktop">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Apple" name="Apfel"/>
+			<Ingredient specific="Carrot Peel" name="Karottenschale"/>
+			<Ingredient specific="Cream Cheese" name="Frischkäse"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Gemüsepurree-Suppe" station="Pot">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Broccoli Stem" name="Brokkoli-Stamm"/>
+			<Ingredient specific="Potato" name="Kartoffel"/>
+			<Ingredient specific="Cream" name="Sahne"/>
+			<Ingredient specific="Garlic" name="Knoblauch"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Bohnen-Brokkoli-Suppe" station="Pot">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Broccoli Stem" name="Brokkoli-Stamm"/>
+			<Ingredient specific="Beans" name="Bohnen"/>
+			<Ingredient type="Water" name="Wasser"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Apfel-Biskuit" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Hazelnut" name="Haselnuss"/>
+			<Ingredient type="Egg" name="Ei"/>
+		</Fixed>
+		<Fixed min="2" max="2">
+			<Ingredient specific="Apple" name="Apfel" status="Mushy"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Avocado-Banane-Kuchen" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Banana" name="Banane" status="Mushy"/>
+			<Ingredient specific="Avocado" name="Avocado" status="Mushy"/>
+			<Ingredient type="Egg" name="Ei"/>
+			<Ingredient specific="Milk" name="Milch"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Steirischer Apfelstrudel" station="Oven">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Apple" name="Apfel" status="Mushy"/>
+			<Ingredient type="Flour" name="Mehl"/>
+			<Ingredient type="Fat" name="Speisefett"/>
+			<Ingredient type="Sweetener" name="Süßungsmittel"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Kürbissuppe" station="Pot">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Pumpkin" name="Kürbis" status="Mushy"/>
+			<Ingredient type="Water" name="Wasser"/>
+			<Ingredient specific="Onion" name="Zwiebel"/>
+			<Ingredient specific="Parsley" name="Petersilie"/>
+		</Fixed>
+	</Recipe>
+
+	<Recipe type="Special" name="Pichelsteiner Eintopf" station="Pot">
+		<Fixed min="1" max="1">
+			<Ingredient specific="Carrot" name="Möhre" status="Mushy"/>
+			<Ingredient specific="Potato" name="Kartoffel"/>
+			<Ingredient specific="Onion" name="Zwiebel"/>
+			<Ingredient specific="Leek" name="Lauch" status="Mushy"/>
+		</Fixed>
+	</Recipe>
+</Recipes>
